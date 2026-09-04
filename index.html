@@ -34,17 +34,19 @@
     }
 
     button {
-      width: 100%;
-      padding: 15px;
-      margin-top: 15px;
-      border: none;
-      border-radius: 12px;
-      background: #31572c;
-      color: white;
-      font-size: 17px;
-      cursor: pointer;
-    }
-
+     .button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 12px;
+  background: #31572c;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
     button:hover {
       opacity: 0.9;
     }
@@ -70,9 +72,9 @@
       <div class="info">📍 Lagerplatz</div>
       <div class="info">👥 Für alle Pfadis</div>
 
-      <button onclick="alert('Die Anmeldung kommt als Nächstes!')">
-        📝 Jetzt anmelden
-      </button>
+   <a href="anmeldung.html" class="button">
+  📝 Jetzt anmelden
+</a>
     </div>
   </main>
 
