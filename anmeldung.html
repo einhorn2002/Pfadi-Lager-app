@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PfadiLager – Anmeldung</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f7f2;
+      color: #1f2937;
+    }
+
+    header {
+      background: #31572c;
+      color: white;
+      padding: 25px 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 550px;
+      margin: 25px auto;
+      padding: 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    label {
+      display: block;
+      margin-top: 18px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 13px;
+      margin-top: 7px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    textarea {
+      min-height: 90px;
+    }
+
+    .option {
+      margin-top: 10px;
+      font-weight: normal;
+    }
+
+    .option input {
+      width: auto;
+      margin-right: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 25px;
+      border: none;
+      border-radius: 12px;
+      background: #31572c;
+      color: white;
+      font-size: 17px;
+    }
+
+    .hinweis {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🏕️ PfadiLager</h1>
+  <p>Lageranmeldung</p>
+</header>
+
+<main>
+  <div class="card">
+
+    <h2>📝 Anmeldung zum Sommerlager</h2>
+
+    <label>Vorname</label>
+    <input type="text" required>
+
+    <label>Nachname</label>
+    <input type="text" required>
+
+    <label>🏠 Straße & Hausnummer</label>
+    <input type="text" required>
+
+    <label>PLZ</label>
+    <input type="text" required>
+
+    <label>Ort</label>
+    <input type="text" required>
+
+    <label>Pfadi-Gruppe</label>
+    <input type="text">
+
+    <label>Geburtsjahr</label>
+    <input type="number" min="1900" max="2030">
+
+    <label>📞 Notfallkontakt</label>
+    <input type="text" placeholder="Name und Telefonnummer">
+
+    <label>🚗 Anreise</label>
+    <select>
+      <option>Bitte auswählen</option>
+      <option>Mit der Gruppe</option>
+      <option>Eigene Anreise</option>
+    </select>
+
+    <label>🏠 Abreise</label>
+    <select>
+      <option>Bitte auswählen</option>
+      <option>Mit der Gruppe</option>
+      <option>Eigene Abreise</option>
+    </select>
+
+    <label>🏊 Schwimmen</label>
+
+    <div class="option">
+      <input type="radio" name="schwimmen">
+      Ich kann schwimmen
+    </div>
+
+    <div class="option">
+      <input type="radio" name="schwimmen">
+      Ich kann nicht schwimmen
+    </div>
+
+    <label>🍽️ Ernährung</label>
+
+    <div class="option">
+      <input type="radio" name="ernaehrung">
+      Mit Fleisch
+    </div>
+
+    <div class="option">
+      <input type="radio" name="ernaehrung">
+      Vegetarisch
+    </div>
+
+    <div class="option">
+      <input type="radio" name="ernaehrung">
+      Vegan
+    </div>
+
+    <div class="option">
+      <input type="radio" name="ernaehrung">
+      Andere / besondere Ernährung
+    </div>
+
+    <label>⚠️ Allergien & Unverträglichkeiten</label>
+
+    <textarea placeholder="Keine oder bitte angeben"></textarea>
+
+    <h3>👨‍👩‍👧 Erziehungsberechtigte Person</h3>
+
+    <label>Name</label>
+    <input type="text" required>
+
+    <label>Telefonnummer</label>
+    <input type="tel" required>
+
+    <div class="option">
+      <input type="checkbox" required>
+      Ich bestätige als erziehungsberechtigte Person,
+      dass mein Kind am Pfadi-Lager teilnehmen darf.
+    </div>
+
+    <div class="option">
+      <input type="checkbox" required>
+      Ich bestätige, dass die Angaben vollständig und richtig sind.
+    </div>
+
+    <h3>📸 Foto-Einwilligung</h3>
+
+    <div class="option">
+      <input type="radio" name="foto" required>
+      Ja, Fotos dürfen für die Öffentlichkeitsarbeit verwendet werden.
+    </div>
+
+    <div class="option">
+      <input type="radio" name="foto">
+      Nein, ich möchte das nicht.
+    </div>
+
+    <button type="submit">
+      ✅ Anmeldung absenden
+    </button>
+
+    <p class="hinweis">
+      Hinweis: Dies ist zunächst eine Testversion.
+      Die Daten werden noch nicht gespeichert.
+    </p>
+
+  </div>
+</main>
+
+</body>
+</html>
